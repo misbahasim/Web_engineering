@@ -1,0 +1,197 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Contact form</title>
+
+		<SCRIPT LANGUAGE = "Javascript">
+                 
+                 function validate(){
+                    var emailError=checkEmail();
+                    var nameError=checkName();
+                    var numberError=checkPhonenumber();
+					if(emailError&& nameError&& numberError){
+					   document.frmOne.submit();
+					}
+					else{
+					return false;
+					}
+					
+                 }
+
+                 function checkEmail(){
+                    var email=document.frmOne.email.value;
+                    if(email==""){
+                      document.getElementById("email_error").innerHTML="No email address";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("email_error").innerHTML="";
+					  var valid=validemail();
+					  if(valid==true){
+                      return true;}
+                   }
+                 } 
+				 
+				 function checkName(){
+                    var Name=document.frmOne.name.value;
+                    if((Name=="") || !isNaN(Name)){
+                      document.getElementById("name_error").innerHTML="No name provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("name_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+				 
+				  function checkPhonenumber(){
+                    var number=document.frmOne.phone.value;
+                    if((number=="") ||(number.length != 11) || isNaN(number)){
+                      document.getElementById("number_error").innerHTML="No vaild number provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("number_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+				
+function validemail()
+{
+var emailID=document.frmOne.email.value;
+atpos= emailID.indexOf("@");
+dotpos= emailID.lastIndexOf(".");
+if(atpos<1 || (dotpos-atpos<2))
+{
+document.getElementById("email_error").innerHTML="Enter correct email address";
+return false;
+}
+return true;
+}				 
+		</SCRIPT>
+</head>
+<style>
+body
+{ 
+	background-image:url(img/1.jpg) ;
+}
+
+formwrapper
+{ width:300px;
+  height:auto;
+  background-color:#CC00CC;
+}
+ 
+form
+{ width:300px;
+  height:auto;
+  background-color:#FFFFFF;
+}
+fieldset
+{ background-color:#000000;
+  border:none;
+  paddind-bottom:10px;
+}
+h1
+{ font-family:"Courier New", Courier, monospace;
+  font-size:40px;
+  color:#999999;
+  
+} 
+label
+{ width:250px;
+  display:block;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#FFFFFF;
+  margin-top: 5px; 
+  margin-right: 0px; 
+  margin-bottom: 5px; 
+  margin-left: 0px; 
+} 
+input
+{ width:250px;
+  border:thin solid #000000;
+  margin-bottom:10px;
+}  
+textarea
+{ width:250px;
+  border:thin solid #CC6666;
+  margin-border:10px;
+} 
+.btn
+{ width:60px;
+  height:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#FFFFFF;
+  font-weight:bold;
+  background-color:#666666;
+  margin-left:10px;
+  float:left;
+}  
+.NavSidebar{
+background:#000000;
+text-decoration: none;
+}
+.NavSidebar a{
+text-decoration:none;
+color:#FFFFFF;
+padding: 10px;
+/*text-align: center;*/
+}
+.NavSidebar ul {
+   list-style: none;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align:center;
+}
+
+.NavSidebar li {
+  display: inline;
+  text-align: center;
+  margin: 25px;
+}
+.NavSidebar a:hover{
+background-color:#999999;
+color: #FFFFFF;
+}
+
+</style>
+<div id="formwrapper">
+<body>
+
+
+<nav class="NavSidebar">
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="About Us.html">About Us</a></li>
+  <li><a href="#">Contact Us</a></li>
+  <li><a href="class page.html">Classes</a></li>
+  <li><a href="LOcation.html">Location</a></li>
+  <li><a href="Registration.html">Registration</a></li>
+  <li><a href="FAQs.html">FAQs</a></li>
+</ul>
+</nav>
+
+<form NAME="frmOne" action="final_insert.php" method="post">
+<fieldset>
+<h1> CONTACT FORM</h1> 
+
+<label for="name">Your Name</label> <SPAN STYLE=color:red ID="name_error"></SPAN>
+<input name="name" type="text" size="40" maxlength="100" />
+<label for="email"> Your Email</label> <SPAN STYLE=color:red ID="email_error"></SPAN>
+<input name="email" type="text" size="40" maxlength="100"/>
+<label for="phone">Your Phone Number</label> <SPAN STYLE=color:red ID="number_error"></SPAN>
+<input name="phone" type="text" size="40" maxlength="100" />
+<label for="message">Your Message</label>
+<textarea name="message" cols="40" rows="10"> </textarea>
+<INPUT class="btn" TYPE="button" VALUE="  SEND  " name="contact_btn" onClick="validate()">
+</fieldset>
+</form>
+
+
+</body>
+</div>
+</html>

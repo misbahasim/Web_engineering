@@ -1,0 +1,296 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Registration form</title>
+</head>
+<SCRIPT LANGUAGE = "Javascript">
+                 
+                 function validate(){
+                    var nameError=checkName();
+					var fnameError=checkFName();
+                    var numberError=checkPhonenumber();
+					var ageError=checkAge();
+					var emailError=checkEmail();
+					var radioError=checkRadio();
+					var checkboxError=checkCheckbox();
+			if(nameError&&fnameError&&numberError&&ageError&&emailError&& radioError&&checkboxError){
+					   document.myForm.submit();
+					}
+					else{
+					return false;
+					}
+					
+                 }
+				 
+				 function checkName(){
+                    var Name=document.myForm.name.value;
+                    if((Name=="") || !isNaN(Name)){
+                      document.getElementById("name_error").innerHTML="No name provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("name_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+				 
+				  function checkFName(){
+                    var Name=document.myForm.fname.value;
+                    if((Name=="") || !isNaN(Name)){
+                      document.getElementById("fname_error").innerHTML="No name provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("fname_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+				 
+				  function checkPhonenumber(){
+                    var number=document.myForm.phone.value;
+                    if((number=="") ||(number.length != 11) || isNaN(number)){
+                      document.getElementById("number_error").innerHTML="No vaild number provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("number_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+				  function checkAge(){
+                  var Age=document.myForm.age.value;
+                      if((Age=="") || isNaN(Age)|| (Age<14) ){
+                      document.getElementById("age_error").innerHTML="No age provided";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("age_error").innerHTML="";
+                      return true;
+                   }
+                 } 
+                 function checkEmail(){
+                    var email=document.myForm.Email.value;
+                    if(email==""){
+                      document.getElementById("email_error").innerHTML="No email address";
+                      return false;
+                   }
+                    else{
+                      document.getElementById("email_error").innerHTML="";
+					  var valid=validemail();
+					  if(valid==true){
+                      return true;}
+                   }
+                 } 
+				 function checkRadio(){
+				 var Gender="";
+				 var len = document.myForm.Gender.length;
+				 var i;
+				 for (i = 0; i < len; i++) {
+                     if ( document.myForm.Gender[i].checked ) {
+                         Gender = document.myForm.Gender[i].value;
+                          break;
+                        }
+                    }
+				 if (Gender==""){
+				   document.getElementById("radio_error").innerHTML="no gender selected";
+				   return false;
+				 }
+				 else{
+				   document.getElementById("radio_error").innerHTML="";
+				   return true;
+				 }
+				}
+				function checkCheckbox(){
+				var Classes="";
+                var clen = document.myForm.Classes.length;
+                var i;
+                for (i = 0; i < clen; i++) {
+                     if ( document.myForm.Classes[i].checked ) {
+                      Classes = document.myForm.Classes[i].value;
+                      break;
+                       } }
+	           if (Classes==""){
+                   document.getElementById("checkbox_error").innerHTML="classes not checked";
+                   return false;
+                 }	
+				 else{
+				   document.getElementById("checkbox_error").innerHTML="";
+				   return true;	 
+				}
+				}
+				
+function validemail()
+{
+var emailID=document.myForm.Email.value;
+atpos= emailID.indexOf("@");
+dotpos= emailID.lastIndexOf(".");
+if(atpos<1 || (dotpos-atpos<2))
+{
+document.getElementById("email_error").innerHTML="Enter correct email address";
+return false;
+}
+return true;
+}				 
+		</SCRIPT>
+<style>
+body
+{   background-image:url(img/regi.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+formwrapper
+{ width:300px;
+  height:auto;
+  background-color:#B2B2B2;
+}
+ 
+form
+{ width:300px;
+  height:auto;
+  background-color:#FFFFFF;
+  
+}
+fieldset
+{ background-color:#F3F3F3;
+  border:double #990000;
+  paddind-bottom:10px;
+ 
+ 
+}
+h1
+{ font-family:"Courier New", Courier, monospace;
+  font-size:40px;
+  color:#990000;
+  
+} 
+label
+{ 
+  width:250px;
+  display:block;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#990000;
+  margin-top: 5px; 
+  margin-right: 0px; 
+  margin-bottom: 5px; 
+  margin-left: 0px; 
+} 
+input
+{ width:250px;
+  border:thin solid #000000;
+  margin-bottom:10px;
+}  
+textarea
+{ width:250px;
+  border:thin solid #CC6666;
+  margin-border:10px;
+} 
+.motto{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 14px;
+/*border-width: 10px;*/
+color:#FFFFFF;
+text-align:center;
+}
+.btn
+{ width:80px;
+  height:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#FFFFFF;
+  font-weight:bold;
+  background-color:#990000;
+  margin-left:10px;
+  float:left;
+}  
+.checkbox
+{ width:30px;
+  border:thick #333333;
+ } 
+ .NavSidebar{
+background:#CCCCCC;
+text-decoration: none;
+}
+.NavSidebar a{
+text-decoration:none;
+color:#990000;
+padding: 10px;
+/*text-align: center;*/
+}
+.NavSidebar ul {
+   list-style: none;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align:center;
+}
+
+.NavSidebar li {
+  display: inline;
+  text-align: center;
+  margin: 25px;
+}
+.NavSidebar a:hover{
+background-color:#FFFFFF;
+color:#660000;
+}
+
+.radio
+{ width:30px;} 
+
+</style>
+<body>
+<nav class="NavSidebar">
+<ul>
+ <li><a href="Home.html">Home</a></li>
+  <li><a href="About Us.html">About Us</a></li>
+  <li><a href="Contact Us.html">Contact Us</a></li>
+  <li><a href="class page.html">Classes</a></li>
+  <li><a href="LOcation.html">Location</a></li>
+  <li><a href="#">Registration</a></li>
+  <li><a href="FAQs.html">FAQs</a></li>
+
+</ul>
+</nav>
+
+
+<div id="formwrapper" align="center">
+<form name="myForm" action="first_insert.php" method="post" />
+<fieldset>
+<h1><u>REGISTRATION FORM</u></h1> 
+<p align="left">
+<label for="name" >Name:</label> <SPAN STYLE=color:red ID="name_error"></SPAN>
+<input name="name" type="text" size="40" maxlength="100" />
+<label for="fname">Father Name:</label> <SPAN STYLE=color:red ID="fname_error"></SPAN>
+<input name="fname" type="text" size="40" maxlength="100" />
+<label for="phone">Phone Number:</label> <SPAN STYLE=color:red ID="number_error"></SPAN>
+<input name="phone" type="text" size="40" maxlength="100" />
+<label for="Age">Age:</label> <SPAN STYLE=color:red ID="age_error"></SPAN>
+<input name="age" type="text" size="40" maxlength="100" />
+<label for="Email">Email:</label>  <SPAN STYLE=color:red ID="email_error"></SPAN>
+<input name="Email" type="text" size="40" maxlength="100" value=""  /> 
+<label for="Gender">Gender:</label>  <SPAN STYLE=color:red ID="radio_error"></SPAN> <br>
+Male <input class="radio" name="Gender" type="radio" value="Male" />
+Female<input class="radio" name="Gender" type="radio" value="Female"/>
+  <br/>
+ <label for="NIC">Classes</label>   <SPAN STYLE=color:red ID="checkbox_error"></SPAN>
+</p>
+<p align="center">
+  Yoga<input class="checkbox" name="Classes" type="checkbox" value="Yoga"/>  
+  Workout<input class="checkbox" name="Classes" type="checkbox" value="Workout"/>
+  </br>
+</p>
+<p align="center">
+Dance  <input class="checkbox" name="Classes" type="checkbox" value="Dance"/>
+Running <input class="checkbox" name="Classes" type="checkbox" value="Running"/> <br/>
+</p>
+<p align="left">
+  <input class="btn" name="submit" type="submit" value="SUBMIT" onclick="return(validate());"/>
+</p>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
