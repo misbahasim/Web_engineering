@@ -1,12 +1,213 @@
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact form</title>
+<link rel="Stylesheet" type="text/css" href="assets/css/gymcss.css">
+<link rel="Stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+<link rel="Stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-		<SCRIPT LANGUAGE = "Javascript">
-                 
-                 function validate(){
+<script>
+
+$(document).ready(function(){
+	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+</script>
+<style>
+body
+{ 
+	background-image:url(assets/img/Fitness-high-resolution-wallpapers.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+	<!--logo-->
+		<div class="navbar-header">
+			<button type="button" id="nav-icon3" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<a href="#" class="navbar-brand">JeoGhAbGym</a>
+		</div>
+		<!--Menu Items-->
+		<div class="collapse navbar-collapse" id="mainNavBar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+				<li><a href="class page.html">Classes</a></li>
+				<li><a href="LOcation.html">Location</a></li>
+				<li><a href="Registration.html">Registration</a></li>
+				<li><a href="FAQs.html">FAQs</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Login/SignUp</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="contact">
+	<div class="container">
+	 <p id="main_h">CONTACT US</p>
+		<div class="cont_header_text">
+			<p>Se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in   enim ipsam voluptatem quia voluptas sit aspernatur fugitSe cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			Se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+			<br/>Feel free to contact us, we will be more then delighted to be at your service.</p>
+		</div>
+		<div class="row">
+			<div class="cont_detail col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>
+				<h4>ADDRESS</h4>
+				<p>JeoGhab Gym Street#5 Near Ismail Zabeeh Road ,Karachi, Sindh, Pakistan, Postal address:455458 </p>
+			</div>
+			<div class="cont_detail col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<h4>PHONES</h4>
+				<ul>
+					<li>Phone: (62626) 5154 4545</li>
+					<li>Mobile#1: (45541) 4875 1483</li>
+					<li>Mobile#2: (78913) 7841 7871</li>
+				</ul>
+			</div>
+			<div class="cont_detail col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				<h4>EMAILS</h4>
+				<ul>
+					<li>abx@jeoghab.com</li>
+					<li>email@democompany.com</li>
+					<li>xasdc79@jeoghabgy.com</li>
+				</ul>
+			</div>
+			<div class="cont_detail col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<i class="fa fa-clock-o" aria-hidden="true"></i>
+				<h4>WORKING HOURS</h4>
+				<ul>
+					<li>Monday-Saturday: 8am - 5pm</li>
+					<li>Firday: 8am - 12pm</li>
+					<li>Sunday: Closed</li>
+				</ul>				
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row location">
+		<div class="header_text">
+			<h1>MAP LOCATION</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		</div>
+		<div class="loc_map col-lg-8 col-md-8 col-sm-8 col-xs-12">
+			<img src="assets/img/OmniFarious-Map1.jpg" width="600px" class="img-responsive"/>
+		</div>
+		<div class="loc_detail col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<h3>ADDRESS DETAIL</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+			<p>Se cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p> 
+		</div>
+	</div>
+</div> 
+
+<div class="social_media">
+<div class="container">
+	<div class="row">
+	<h1>FOLLOW OUR SOCIALS</h1>
+		<div class="header_text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br/>
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+		</div>
+		<div class="sc_icons">
+			<i class="fa fa-git" aria-hidden="true"></i>
+			<i class="fa fa-linkedin" aria-hidden="true"></i>
+			<i class="fa fa-wordpress" aria-hidden="true"></i>
+			<i class="fa fa-instagram" aria-hidden="true"></i>
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+			<i class="fa fa-skype" aria-hidden="true"></i>
+		</div>
+	</div>
+</div>
+</div>
+
+<div id="cont_form">
+	<div class="container">
+		<div class="header_text">
+			<h1>LEAVE A MESSAGE</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<form>
+			<div class="msg">
+				<input type="text" pattern="[A-Z]-[a-z]" placeholder="Your Name" required></input>
+				<input type="email" placeholder="Your Email" required></input>
+				<input type="tel"  pattern="[0-9]" placeholder="Your Contact Number:"></input>
+			</div>
+			<div class="msg">
+				<textarea rows="10" placeholder="Your message here"></textarea> 
+			</div>
+			<div class="msg">
+				<button type="button">SUBMIT</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<footer>
+	<div class="footer_upper">
+		<div class="container">
+			<div class="column_1 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<h2>JeoGhaB</h2>
+				<p>We provide you a perfect platform to keep you healthy and fit. Tip: Avoid eating a large meal before sleeping to decrease gastroesophageal reflux and weight gain. </p>
+			</div>
+			<div class="column_2 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<h2>Get In Touch</h2>
+				<ul>
+					<li> <i class="fa fa-envelope-o" aria-hidden="true"></i> email: email@democompany.com</li>
+					<li> <i class="fa fa-phone" aria-hidden="true"></i> Phone: (62626) 5154 4545</li>
+					<li> <i class="fa fa-map-marker" aria-hidden="true"></i> Address: Street 32165, 646 UK</li>
+				</ul>
+			</div>
+			<div class="column_3 col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<h2>Timings</h2>
+				<dl>
+					<dt>Monday - Saturday</dt>
+					<dd>8am - 5pm</dd>
+				</dl>
+				<dl>
+					<dt>On Firday</dt>
+					<dd>8am - 12pm</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="copyright container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			&copy; Copyright 2016, JeoGhaB Gym. All Rights Reserved
+		</div>
+	</div>
+</footer>
+
+</body>
+
+<SCRIPT LANGUAGE = "Javascript">
+function validate(){
                     var emailError=checkEmail();
                     var nameError=checkName();
                     var numberError=checkPhonenumber();
@@ -19,7 +220,7 @@
 					
                  }
 
-                 function checkEmail(){
+function checkEmail(){
                     var email=document.frmOne.email.value;
                     if(email==""){
                       document.getElementById("email_error").innerHTML="No email address";
@@ -33,7 +234,7 @@
                    }
                  } 
 				 
-				 function checkName(){
+function checkName(){
                     var Name=document.frmOne.name.value;
                     if((Name=="") || !isNaN(Name)){
                       document.getElementById("name_error").innerHTML="No name provided";
@@ -45,7 +246,7 @@
                    }
                  } 
 				 
-				  function checkPhonenumber(){
+function checkPhonenumber(){
                     var number=document.frmOne.phone.value;
                     if((number=="") ||(number.length != 11) || isNaN(number)){
                       document.getElementById("number_error").innerHTML="No vaild number provided";
@@ -57,141 +258,17 @@
                    }
                  } 
 				
-function validemail()
-{
-var emailID=document.frmOne.email.value;
-atpos= emailID.indexOf("@");
-dotpos= emailID.lastIndexOf(".");
-if(atpos<1 || (dotpos-atpos<2))
-{
-document.getElementById("email_error").innerHTML="Enter correct email address";
-return false;
-}
-return true;
-}				 
-		</SCRIPT>
-</head>
-<style>
-body
-{ 
-	background-image:url(img/1.jpg) ;
-}
+function validemail(){
+					var emailID=document.frmOne.email.value;
+					atpos= emailID.indexOf("@");
+					dotpos= emailID.lastIndexOf(".");
+					if(atpos<1 || (dotpos-atpos<2))
+					{
+					document.getElementById("email_error").innerHTML="Enter correct email address";
+					return false;
+					}
+					return true;
+					}			
+</SCRIPT>
 
-formwrapper
-{ width:300px;
-  height:auto;
-  background-color:#CC00CC;
-}
- 
-form
-{ width:300px;
-  height:auto;
-  background-color:#FFFFFF;
-}
-fieldset
-{ background-color:#000000;
-  border:none;
-  paddind-bottom:10px;
-}
-h1
-{ font-family:"Courier New", Courier, monospace;
-  font-size:40px;
-  color:#999999;
-  
-} 
-label
-{ width:250px;
-  display:block;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:12px;
-  color:#FFFFFF;
-  margin-top: 5px; 
-  margin-right: 0px; 
-  margin-bottom: 5px; 
-  margin-left: 0px; 
-} 
-input
-{ width:250px;
-  border:thin solid #000000;
-  margin-bottom:10px;
-}  
-textarea
-{ width:250px;
-  border:thin solid #CC6666;
-  margin-border:10px;
-} 
-.btn
-{ width:60px;
-  height:20px;
-  font-family:Arial, Helvetica, sans-serif;
-  color:#FFFFFF;
-  font-weight:bold;
-  background-color:#666666;
-  margin-left:10px;
-  float:left;
-}  
-.NavSidebar{
-background:#000000;
-text-decoration: none;
-}
-.NavSidebar a{
-text-decoration:none;
-color:#FFFFFF;
-padding: 10px;
-/*text-align: center;*/
-}
-.NavSidebar ul {
-   list-style: none;
-  padding-left: 15px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  text-align:center;
-}
-
-.NavSidebar li {
-  display: inline;
-  text-align: center;
-  margin: 25px;
-}
-.NavSidebar a:hover{
-background-color:#999999;
-color: #FFFFFF;
-}
-
-</style>
-<div id="formwrapper">
-<body>
-
-
-<nav class="NavSidebar">
-<ul>
-  <li><a href="Home.html">Home</a></li>
-  <li><a href="About Us.html">About Us</a></li>
-  <li><a href="#">Contact Us</a></li>
-  <li><a href="class page.html">Classes</a></li>
-  <li><a href="LOcation.html">Location</a></li>
-  <li><a href="Registration.html">Registration</a></li>
-  <li><a href="FAQs.html">FAQs</a></li>
-</ul>
-</nav>
-
-<form NAME="frmOne" action="final_insert.php" method="post">
-<fieldset>
-<h1> CONTACT FORM</h1> 
-
-<label for="name">Your Name</label> <SPAN STYLE=color:red ID="name_error"></SPAN>
-<input name="name" type="text" size="40" maxlength="100" />
-<label for="email"> Your Email</label> <SPAN STYLE=color:red ID="email_error"></SPAN>
-<input name="email" type="text" size="40" maxlength="100"/>
-<label for="phone">Your Phone Number</label> <SPAN STYLE=color:red ID="number_error"></SPAN>
-<input name="phone" type="text" size="40" maxlength="100" />
-<label for="message">Your Message</label>
-<textarea name="message" cols="40" rows="10"> </textarea>
-<INPUT class="btn" TYPE="button" VALUE="  SEND  " name="contact_btn" onClick="validate()">
-</fieldset>
-</form>
-
-
-</body>
-</div>
 </html>
