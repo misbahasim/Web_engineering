@@ -180,17 +180,20 @@ header img{
 .questions{
 	height:150px;
 }
-.faci_row{
-	height:400px;
-}
+
 .facilities{
 	background-color:#0b0c10;
+	padding:3% 0;
 }
 .facilities .col-md-4{
 	padding:0px !important;
 }
 .faci_header h1{
 	margin-bottom: 2%;
+}
+.images img{
+	width:100%;
+	height:400px;
 }
 
 .facility_text h4{
@@ -274,6 +277,9 @@ header img{
 .loc_detail{
 	color:#C5C6C7;
 	text-align:justify;
+}
+.loc_map img{
+	width:100%;
 }
 .social_media{
 	background-color:rgb(31,40,51,0.9);   /*#1F2833*/
