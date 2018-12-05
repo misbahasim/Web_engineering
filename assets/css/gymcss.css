@@ -1,13 +1,9 @@
 
 body{
-	font:large 12px/2.0em;
-	margin: 0 auto;
-	padding:0px;
-	font-family:"Times New Roman", Times, serif;
+	 padding-top: 50px;
 }
 h1,h2,h3,h4  {
 	color:#66fcf1 !important;
-	text-align:center;
 	}
 	
 .header_text{
@@ -16,12 +12,25 @@ h1,h2,h3,h4  {
 	font-size:13px;
 	padding-bottom: 7%;
 }
+
+
 header img{
 	border: 2px solid #660000;
 	height: 200px;
 	width: 1000px;
 	border-radius: 15px;
 }
+
+/*-------------------------------
+
+rgb(11,12,16);      #0B0C10
+rgb(31,40,51);      #1F2833
+rgb(197,198,199);   #C5C6C7 
+rgb(102,252,241);   #66FCF1
+rgb(69,162,158);    #45A29E
+
+ -------------------------------*/
+
 /*----------------------------------
 # Navbar bars to cross
 -----------------------------------*/
@@ -107,8 +116,12 @@ header img{
 	border-color:transparent;
 }
 
-.navbar{
-	margin-bottom: 0px !important;
+/*----------------------------------
+# Home Page
+-----------------------------------*/
+
+#home{
+	background-color:#0B0C10;
 }
 
 .motto{
@@ -160,27 +173,13 @@ header img{
 # Content (About Us Page)
 -----------------------------------*/
 
-.heading_about_us h1{ 
-	background-color:#660000;
-	font-family:"Times New Roman", Times, serif;
-	color:#FFFFFF;
-}		
-.content_about_us h3{
-	 font-family:"Times New Roman", Times, serif;
-	 color:#FFFFFF;
- }
-.content_about_us p{ 
-	color:#c5c6c7;  }
-.content_about_us img{
-		border:double #660000;
-		}
-.style1 {
-	background-color: #FFFFFF
-}
-.questions{
-	height:150px;
-}
+.about{
+	background-color: rgb(31,40,51,0.7);   /*#C5C6C7*/
+	padding: 7% 0;
+	text-align:center;
+	background-image:url(assets/img/Fitness-high-resolution-wallpapers.jpg);
 
+}
 .facilities{
 	background-color:#0b0c10;
 	padding:3% 0;
@@ -359,16 +358,6 @@ header img{
 
 
 /*-------------------------------
-
-rgb(11,12,16);      #0B0C10
-rgb(31,40,51);      #1F2833
-rgb(197,198,199);   #C5C6C7 
-rgb(102,252,241);   #66FCF1
-rgb(69,162,158);    #45A29E
-
- -------------------------------*/
-
-/*-------------------------------
  #Footer 
  -------------------------------*/
 
@@ -403,6 +392,10 @@ rgb(69,162,158);    #45A29E
 .column_3{
 	text-align:center;
 }
+.questions{
+	height:150px;
+}
+
 /*-------------------------------
  #Footerblurb 
  -------------------------------*/
