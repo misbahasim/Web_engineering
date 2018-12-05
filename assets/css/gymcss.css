@@ -123,7 +123,10 @@ rgb(69,162,158);    #45A29E
 #home{
 	background-color:#0B0C10;
 }
-
+.featurette-image{
+	width:500px;
+	height:500px;
+}
 .motto{
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 14px;
@@ -356,7 +359,10 @@ rgb(69,162,158);    #45A29E
 	background:#C5C6C7 ;
 }
 
-
+.questions{
+	margin:3%;
+	height:350px;
+}
 /*-------------------------------
  #Footer 
  -------------------------------*/
@@ -389,53 +395,8 @@ rgb(69,162,158);    #45A29E
 .fa{
 	color:#fff;
 }
-.column_3{
+.column_3, .column_1 h2, .column_2 h2{
 	text-align:center;
 }
-.questions{
-	height:150px;
-}
 
-/*-------------------------------
- #Footerblurb 
- -------------------------------*/
-#footerblurb { 
-	position: bottom;
-	bottom:0px;
-	left:0px;
-	color:#c5c6c7;
-	margin-top:20px;
-	font-family:"Times New Roman", Times, serif;
-	width: 100%;
-}
-#footerblurb-inner {
-	margin:0 auto; 
-	background:#1f2833;
-	width:100%; 
-	padding:1% 0%;
-} 
-#footerblurb .column { 
-	margin:0;
-	text-align:justify; 
-	float:left;
-	width:250px;
-	padding:0 24px;
-}
-.column h2{
-	color:#66fcf1;
-}
-			
-/* Footer */
-			#footer {
-			/*position:absolute;
-			bottom:0px;*/
-			color:#66fcf1;
-			}
-			#footer-inner {
-				text-align:center;
-				padding-top:0px; 
-				width:922px;}
-		
-			
-			/* Clear both sides to assist with div alignment  */
-			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+
