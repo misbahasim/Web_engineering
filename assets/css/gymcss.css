@@ -125,8 +125,8 @@ rgb(69,162,158);    #45A29E
 	background-color:#0B0C10;
 }
 .featurette-image{
-	width:500px;
-	height:500px;
+	width:500px !important;
+	height:400px !important;
 }
 
 /*----------------------------------
@@ -323,20 +323,21 @@ rgb(69,162,158);    #45A29E
 # Class Page
 -----------------------------------*/
 
+
 .courses{
-	background:rgb(69,162,158);
+	background:rgb(69,162,158,0.5);
+	padding:4% 3%;
 }
 .trainers{
 	background:rgb(31,40,51);     /* #1F2833*/
+	padding:4% 3%;
 }
 .schedule{
-	background:rgb(197,198,199,0.5);   /*#C5C6C7*/
-}
-.plans{
-	background:rgb(102,252,241,0.7);   /*#66FCF1*/
+	background:rgb(197,198,199);   /*#C5C6C7*/
+	padding:4% 3%;
 }
 .register{
-	background:rgb(69,162,158);    /*#45A29E*/
+	background:rgb(102,252,241,0.7);   /*#66FCF1*/
 }
 
 /*-------------------------------
