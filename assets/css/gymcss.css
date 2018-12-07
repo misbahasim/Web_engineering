@@ -3,7 +3,8 @@ body{
 	 padding-top: 50px;
 }
 h1,h2,h3,h4  {
-	color:#66fcf1 !important;
+	color:#66fcf1 !important; 
+	margin-top:0 !important;
 	}
 	
 .header_text{
@@ -127,61 +128,15 @@ rgb(69,162,158);    #45A29E
 	width:500px;
 	height:500px;
 }
-.motto{
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 14px;
-	/*border-width: 10px;*/
-	color:#FFFFFF;
-	text-align:center;
-}
-.innermotto{
-	font-size:24px;
-	border-top: 1px dotted Maroon;
-	border-bottom: 1px dotted Khaki;
-	padding: 5px;
-	background-color:#660000;
-}
-.innermotto span{
-	font-family:Harrington;
-	color: #00CC00;
-	letter-spacing: 5px;
-	font-size:40px;
-}
-.NavSidebar{
-	background:#1f2833;
-	text-decoration: none;
-}
-.NavSidebar a{
-	text-decoration:none;
-	color:#45a29e;
-	padding: 10px;
-/*text-align: center;*/
-}
-.NavSidebar ul {
-	  list-style: none;
-	  padding:10px 15px;
-	  text-align:center;
-}
-.NavSidebar li {
-	  display: inline;
-	  text-align: center;
-	  margin: 25px;
-}
-.NavSidebar a:hover{
-	background-color: #45a29e;
-	color:#1f2833;
-}
 
 /*----------------------------------
-# Content (About Us Page)
+# About Us
 -----------------------------------*/
 
 .about{
 	background-color: rgb(31,40,51,0.7);   /*#C5C6C7*/
 	padding: 7% 0;
 	text-align:center;
-	background-image:url(assets/img/Fitness-high-resolution-wallpapers.jpg);
-
 }
 .facilities{
 	background-color:#0b0c10;
@@ -295,8 +250,8 @@ rgb(69,162,158);    #45A29E
 	border: 3px solid #45A29E;
 	border-radius:50px;
 	color:#45A29E;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
 }
 .sc_icons i:hover{
 	background:#C5C6C7;
@@ -363,6 +318,27 @@ rgb(69,162,158);    #45A29E
 	margin:3%;
 	height:350px;
 }
+
+/*----------------------------------
+# Class Page
+-----------------------------------*/
+
+.courses{
+	background:rgb(69,162,158);
+}
+.trainers{
+	background:rgb(31,40,51);     /* #1F2833*/
+}
+.schedule{
+	background:rgb(197,198,199,0.5);   /*#C5C6C7*/
+}
+.plans{
+	background:rgb(102,252,241,0.7);   /*#66FCF1*/
+}
+.register{
+	background:rgb(69,162,158);    /*#45A29E*/
+}
+
 /*-------------------------------
  #Footer 
  -------------------------------*/
