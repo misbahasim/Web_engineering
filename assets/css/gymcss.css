@@ -326,11 +326,11 @@ rgb(69,162,158);    #45A29E
 	padding:4% 3%;
 }
 .schedule{
-	background:rgb(197,198,199,0.6);   /*#C5C6C7*/
+	background:rgb(197,198,199,0.9);   /*#C5C6C7*/
 	padding:4% 3%;
 }
 .register{
-	background:rgb(102,252,241,0.2);   /*#66FCF1*/
+	background:linear-gradient(rgb(31,40,51,0.9),rgb(102,252,241,0.9));   /*#66FCF1*/
 }
 
 /*-------------------------------
