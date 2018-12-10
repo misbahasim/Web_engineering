@@ -121,6 +121,25 @@ rgb(69,162,158);    #45A29E
 	width:500px;
 	height:500px !important;
 }
+.featurette-btn a:active{
+	color:#c5c6c7;
+}
+.featurette-btn{
+	color: #c5c6c7;
+	border: 2px solid #45A29E;
+	padding:2%;
+	margin-top:15px;
+	background-color:transparent;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	font-weight:bold;
+}
+.featurette-btn:hover{
+	color:black;
+	border: 2px solid transparent;
+	background-color:#45A29E;
+} 	
+
 
 /*----------------------------------
 # About Us
@@ -316,21 +335,58 @@ rgb(69,162,158);    #45A29E
 # Class Page
 -----------------------------------*/
 
-
 .courses{
-	background:rgb(69,162,158,0.8);
+	background:linear-gradient(75deg,#45A29ECC,#1F2833CC,#C5C6C7CC);
 	padding:4% 3%;
+}
+.featurette-headings{
+	font-weight:bold;
+}
+.lead{
+	color:#C5C6C7;
 }
 .trainers{
-	background:rgb(31,40,51);     /* #1F2833*/
+	background:#1F2833;   
 	padding:4% 3%;
 }
+.trainers img{
+	width:400px;
+	height:300px;
+}
+.teach {
+	text-align:center;
+	padding: 5%;
+	background:#45A29E;
+	margin-bottom:3%;
+}
+.teach .tech_heading{
+	font-size:15px;
+	font-weight:bold;
+	color:#66FCF1;
+}
+.teach .tech_subheading{
+	font-size:12px;
+	font-weight:bold;
+}
+.teach  p{
+	padding:6% 0;
+}
+.teach .fa{
+	font-size:20px;
+	padding:0 3%;
+}
 .schedule{
-	background:rgb(197,198,199,0.9);   /*#C5C6C7*/
+	background:#C5C6C7E6;   
 	padding:4% 3%;
 }
 .register{
-	background:linear-gradient(rgb(31,40,51,0.9),rgb(102,252,241,0.9));   /*#66FCF1*/
+	background:linear-gradient(#1F2833E6,#66FCF1E6);   /*#66FCF1*/
+}
+.plans{
+	background:#C5C6C7;
+	margin:2% 4%;
+	padding:4%;
+	text-align:center;
 }
 
 /*-------------------------------
