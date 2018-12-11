@@ -150,6 +150,28 @@ rgb(69,162,158);    #45A29E
 	padding: 7% 0;
 	text-align:center;
 }
+.about h2{
+	background:linear-gradient(45deg,#45a29e,#1f2833,#c5c6c7);
+	padding-bottom:20px;
+}
+#about_moto{
+	font-size:17px;
+	color:#C5C6C7;
+	margin:3% 0;
+}
+#about_hist{
+	color:#C5C6C7;
+	margin:3% 1%;
+}
+.member_pic{
+	margin: 2% 0;
+}
+.member_context{
+	text-align:justify;
+	margin: 2% 0%;
+	color:#C5C6C7;
+	font-size:15px;
+}
 .facilities{
 	background-color:#0b0c10;
 	padding:3% 0;
@@ -350,7 +372,7 @@ rgb(69,162,158);    #45A29E
 	padding:4% 3%;
 }
 .trainers img{
-	width:400px;
+	width:100%;
 	height:300px;
 }
 .teach {
@@ -383,10 +405,46 @@ rgb(69,162,158);    #45A29E
 	background:linear-gradient(#1F2833E6,#66FCF1E6);   /*#66FCF1*/
 }
 .plans{
-	background:#C5C6C7;
 	margin:2% 4%;
-	padding:4%;
 	text-align:center;
+}
+
+.plan_heading{
+	font-weight: 700;
+	font-size:20px;
+	margin-bottom:20px;
+}
+.plan_cost{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%; /* the magic */
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 auto 10px;
+  background:#0B0C10CC;
+}
+a.regis_btn{
+	width:100%;
+	color:#C5C6C7;
+	background:  #45A29E;
+	 outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-weight: bold;
+	margin: 2% 0;
+	padding: 1% 0;
+	font-size: 20px;
+}
+a.regis_btn:hover{
+	color:#45A29E;
+	background:#C5C6C7 ;
 }
 
 /*-------------------------------
