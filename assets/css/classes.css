@@ -1,12 +1,5 @@
 /* CSS Document */
-.table1,.table2,.table3,.table4{
-margin-top: 100px;
-margin-left: 150px;
-margin-bottom: 50px;
-color:#FFFFFF;
-width: 500px;
-text-align: center;
-}
+
 tr:nth-child(even){
 background-color:Silver;
 }
