@@ -482,5 +482,10 @@ a.regis_btn:hover{
 .column_3, .column_1 h2, .column_2 h2{
 	text-align:center;
 }
-
+#fixedfooter {
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+}
 
