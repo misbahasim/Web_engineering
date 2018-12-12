@@ -401,6 +401,39 @@ rgb(69,162,158);    #45A29E
 	background:#C5C6C7E6;   
 	padding:4% 3%;
 }
+.sche_btn button{
+	color: #c5c6c7;
+	border: 2px solid #45A29E;
+	background-color:#0B0C10;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin:15px;
+	padding:1%;
+	width:100px;
+}
+.sche_btn button:hover{
+	color:black;
+	border: 2px solid transparent;
+	background-color:#45A29E;
+} 	
+table{
+	text-align:center;
+	color:white;
+}
+tbody tr:nth-child(even){
+	background-color:#1F2833 ;
+}
+tbody tr:nth-child(odd){
+	background-color: #45A29E;
+}
+th ,tfoot{
+	color:black;
+	background-color:Silver;
+}
+
+
 .register{
 	background:linear-gradient(#1F2833E6,#66FCF1E6);   /*#66FCF1*/
 }
@@ -418,7 +451,7 @@ rgb(69,162,158);    #45A29E
   width: 150px;
   height: 150px;
   line-height: 150px;
-  border-radius: 50%; /* the magic */
+  border-radius: 50%; 
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   color: white;
