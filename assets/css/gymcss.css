@@ -295,7 +295,20 @@ rgb(69,162,158);    #45A29E
 	background-color: rgb(69,162,158,0.8);   /*#45A29E*/
 	padding:4% 0;
 }
-
+.personal input{
+	padding: .6180469716em;
+	margin: 1% 0 2% 0;
+    background-color: #4b525b;
+    color: #F5F6F7;
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-weight: 400;
+    border:solid 2px #0B0C10;
+	width:100%;
+}
 .msg input{
 	padding: .6180469716em;
 	margin: 1% 0 2% 0;
@@ -348,10 +361,6 @@ rgb(69,162,158);    #45A29E
 	background:#C5C6C7 ;
 }
 
-.questions{
-	margin:3%;
-	height:350px;
-}
 
 /*----------------------------------
 # Class Page
@@ -486,6 +495,22 @@ a.regis_btn{
 a.regis_btn:hover{
 	color:#45A29E;
 	background:#C5C6C7 ;
+}
+/*-------------------------------
+ #Registration Page
+ -------------------------------*/
+ 
+.register_form{
+	background:linear-gradient(75deg,#45A29ECC,#1F2833CC,#C5C6C7CC);
+	padding:20px 0;
+}
+
+/*-------------------------------
+ #FAQs page
+ -------------------------------*/
+ 
+.questions{
+	margin:3%;
 }
 
 /*-------------------------------
