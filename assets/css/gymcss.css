@@ -401,6 +401,9 @@ rgb(69,162,158);    #45A29E
 	background:#C5C6C7E6;   
 	padding:4% 3%;
 }
+.sche_btn{
+	text-align:center;
+}
 .sche_btn button{
 	color: #c5c6c7;
 	border: 2px solid #45A29E;
@@ -418,6 +421,9 @@ rgb(69,162,158);    #45A29E
 	border: 2px solid transparent;
 	background-color:#45A29E;
 } 	
+.alignment{
+	text-align:center;
+}
 table{
 	text-align:center;
 	color:white;
@@ -431,6 +437,8 @@ tbody tr:nth-child(odd){
 th ,tfoot{
 	color:black;
 	background-color:Silver;
+	font-weight:600;
+	text-transform:uppercase;
 }
 
 

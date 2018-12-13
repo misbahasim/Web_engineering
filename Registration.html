@@ -9,135 +9,6 @@
 <script src="assets/js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
-<SCRIPT LANGUAGE = "Javascript">
-                 
-                 function validate(){
-                    var nameError=checkName();
-					var fnameError=checkFName();
-                    var numberError=checkPhonenumber();
-					var ageError=checkAge();
-					var emailError=checkEmail();
-					var radioError=checkRadio();
-					var checkboxError=checkCheckbox();
-			if(nameError&&fnameError&&numberError&&ageError&&emailError&& radioError&&checkboxError){
-					   document.myForm.submit();
-					}
-					else{
-					return false;
-					}
-					
-                 }
-				 
-				 function checkName(){
-                    var Name=document.myForm.name.value;
-                    if((Name=="") || !isNaN(Name)){
-                      document.getElementById("name_error").innerHTML="No name provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("name_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-				 
-				  function checkFName(){
-                    var Name=document.myForm.fname.value;
-                    if((Name=="") || !isNaN(Name)){
-                      document.getElementById("fname_error").innerHTML="No name provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("fname_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-				 
-				  function checkPhonenumber(){
-                    var number=document.myForm.phone.value;
-                    if((number=="") ||(number.length != 11) || isNaN(number)){
-                      document.getElementById("number_error").innerHTML="No vaild number provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("number_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-				  function checkAge(){
-                  var Age=document.myForm.age.value;
-                      if((Age=="") || isNaN(Age)|| (Age<14) ){
-                      document.getElementById("age_error").innerHTML="No age provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("age_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-                 function checkEmail(){
-                    var email=document.myForm.Email.value;
-                    if(email==""){
-                      document.getElementById("email_error").innerHTML="No email address";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("email_error").innerHTML="";
-					  var valid=validemail();
-					  if(valid==true){
-                      return true;}
-                   }
-                 } 
-				 function checkRadio(){
-				 var Gender="";
-				 var len = document.myForm.Gender.length;
-				 var i;
-				 for (i = 0; i < len; i++) {
-                     if ( document.myForm.Gender[i].checked ) {
-                         Gender = document.myForm.Gender[i].value;
-                          break;
-                        }
-                    }
-				 if (Gender==""){
-				   document.getElementById("radio_error").innerHTML="no gender selected";
-				   return false;
-				 }
-				 else{
-				   document.getElementById("radio_error").innerHTML="";
-				   return true;
-				 }
-				}
-				function checkCheckbox(){
-				var Classes="";
-                var clen = document.myForm.Classes.length;
-                var i;
-                for (i = 0; i < clen; i++) {
-                     if ( document.myForm.Classes[i].checked ) {
-                      Classes = document.myForm.Classes[i].value;
-                      break;
-                       } }
-	           if (Classes==""){
-                   document.getElementById("checkbox_error").innerHTML="classes not checked";
-                   return false;
-                 }	
-				 else{
-				   document.getElementById("checkbox_error").innerHTML="";
-				   return true;	 
-				}
-				}
-				
-function validemail()
-{
-var emailID=document.myForm.Email.value;
-atpos= emailID.indexOf("@");
-dotpos= emailID.lastIndexOf(".");
-if(atpos<1 || (dotpos-atpos<2))
-{
-document.getElementById("email_error").innerHTML="Enter correct email address";
-return false;
-}
-return true;
-}				 
-		</SCRIPT>
 
 <body>
 
@@ -172,67 +43,82 @@ return true;
 
 <div class="container">
 <form>
+
+  <div class="form-group col-md-6">
+    <label for="exampleInputPassword1" class="bmd-label-floating">First Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Last Name</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Age</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1" class="bmd-label-floating">Phone</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
   <div class="form-group">
     <label for="exampleInputEmail1" class="bmd-label-floating">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1">
     <span class="bmd-help">We'll never share your email with anyone else.</span>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1" class="bmd-label-floating">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect1" class="bmd-label-floating">Example select</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect2" class="bmd-label-floating">Example multiple select</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleTextarea" class="bmd-label-floating">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile" class="bmd-label-floating">File input</label>
-    <input type="file" class="form-control-file" id="exampleInputFile">
-    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </div>
+
   <div class="radio">
     <label>
       <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-      Option one is this and that&mdash;be sure to include why it's great
+      Male
     </label>
   </div>
   <div class="radio">
     <label>
       <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-      Option two can be something else and selecting it will deselect option one
+      Female
     </label>
   </div>
-  <div class="radio disabled">
+  
+  <div class="checkbox">
     <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-      Option three is disabled
+      <input type="checkbox"> YOGA
     </label>
   </div>
   <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
+	<label>
+      <input type="checkbox"> FULL BODY WORKOUT
     </label>
   </div>
+  <div class="checkbox">
+	<label>
+      <input type="checkbox"> WEIGHT REDUCING
+    </label>
+  </div>
+  <div class="checkbox">
+	<label>
+      <input type="checkbox"> DANCE
+    </label>
+  </div>
+  <div class="checkbox">
+	<label>
+      <input type="checkbox"> BODY SCULPTING
+    </label>
+  </div>
+  <div class="checkbox">
+	<label>
+      <input type="checkbox"> CARDIO
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleSelect1" class="bmd-label-floating">Select a plan</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Monthly(5000/-)</option>
+      <option>Yearly(20,000/-)</option>
+      <option>Become a member(50,000/-)</option>
+    </select>
+  </div>
+    
   <button class="btn btn-default">Cancel</button>
   <button type="submit" class="btn btn-primary btn-raised">Submit</button>
 </form>
