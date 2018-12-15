@@ -488,7 +488,7 @@ a.regis_btn:hover{
  -------------------------------*/
  
 .register_form{
-	background:linear-gradient(75deg,#45A29ECC,#1F2833CC,#C5C6C7CC);
+	background:linear-gradient(90deg,#45A29ECC,#1F2833CC);
 	padding:20px 0;
 }
 .personal input[type="text"],
