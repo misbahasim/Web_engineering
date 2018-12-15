@@ -22,3 +22,6 @@ else {
 echo"Your Form has been submitted successfully :)";
 }
 ?>
+
+
+this is what the contact form submit button does in the background
