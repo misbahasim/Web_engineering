@@ -24,6 +24,53 @@ rgb(102,252,241);   #66FCF1
 rgb(69,162,158);    #45A29E
 
  -------------------------------*/
+ 
+ 
+/*--------------------------------------------------------------
+# Back to Top button
+--------------------------------------------------------------*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
 
 /*----------------------------------
 # Navbar bars to cross
@@ -150,10 +197,10 @@ rgb(69,162,158);    #45A29E
 	padding: 7% 0;
 	text-align:center;
 }
-.about h2{
-	background:linear-gradient(45deg,#45a29e,#1f2833,#c5c6c7);
+/*.about h2{
+	background:linear-gradient(35deg,#45a29e,#1f2833,#c5c6c7);
 	padding-bottom:20px;
-}
+}*/
 #about_moto{
 	font-size:17px;
 	color:#C5C6C7;
@@ -229,7 +276,7 @@ rgb(69,162,158);    #45A29E
 #main_h{
 	font-size:100px;
 	font-weight:bold;
-	 background: -webkit-linear-gradient( 90deg, #66FCF1,#45A29E);
+	 background: -webkit-linear-gradient(#66FCF1,#0b0c10);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -507,6 +554,10 @@ a.regis_btn:hover{
     font-weight: 400;
     border:solid 2px #0B0C10;
 	width:100%;
+}
+
+.personal input[type="radio"]{
+	margin: 4px 5px;
 }
 
 /*-------------------------------
