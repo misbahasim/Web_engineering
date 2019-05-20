@@ -54,8 +54,6 @@ body
 	</div>
 </nav>
 
-<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
 <div class="contact">
 	<div class="container">
 	 <p id="main_h">CONTACT US</p>
@@ -198,71 +196,8 @@ body
 	</div>
 </footer>
 
+<a href="#" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
 </body>
-
-<SCRIPT LANGUAGE = "Javascript">
-function validate(){
-                    var emailError=checkEmail();
-                    var nameError=checkName();
-                    var numberError=checkPhonenumber();
-					if(emailError&& nameError&& numberError){
-					   document.frmOne.submit();
-					}
-					else{
-					return false;
-					}
-					
-                 }
-
-function checkEmail(){
-                    var email=document.frmOne.email.value;
-                    if(email==""){
-                      document.getElementById("email_error").innerHTML="No email address";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("email_error").innerHTML="";
-					  var valid=validemail();
-					  if(valid==true){
-                      return true;}
-                   }
-                 } 
-				 
-function checkName(){
-                    var Name=document.frmOne.name.value;
-                    if((Name=="") || !isNaN(Name)){
-                      document.getElementById("name_error").innerHTML="No name provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("name_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-				 
-function checkPhonenumber(){
-                    var number=document.frmOne.phone.value;
-                    if((number=="") ||(number.length != 11) || isNaN(number)){
-                      document.getElementById("number_error").innerHTML="No vaild number provided";
-                      return false;
-                   }
-                    else{
-                      document.getElementById("number_error").innerHTML="";
-                      return true;
-                   }
-                 } 
-				
-function validemail(){
-					var emailID=document.frmOne.email.value;
-					atpos= emailID.indexOf("@");
-					dotpos= emailID.lastIndexOf(".");
-					if(atpos<1 || (dotpos-atpos<2))
-					{
-					document.getElementById("email_error").innerHTML="Enter correct email address";
-					return false;
-					}
-					return true;
-					}			
-</SCRIPT>
 
 </html>
